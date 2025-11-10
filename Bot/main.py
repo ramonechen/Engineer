@@ -81,5 +81,5 @@ async def on_disconnect():
     await db.close()
     print("Disconnected from the database.")
 
-
-bot.run(os.getenv("DISCORD_TOKEN"))
+if __name__ == "__main__":
+    bot.run(os.getenv("DISCORD_TOKEN"))
